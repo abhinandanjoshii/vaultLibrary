@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vaultLibrary"
+version = "0.1.0"
+description = "Shared models for Python services (Caller enum)"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "consoleadmin", email = "abhinandanjoshi@consoleadmin.com" }]
+license = { text = "MIT" }
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/vaultModels"]
